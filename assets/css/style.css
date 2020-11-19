@@ -1,0 +1,328 @@
+@font-face {
+  font-family: Leixo;
+  src: url("/assets/font/LEIXO-DEMO.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+header {
+  display: inline;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+footer h3 {
+  padding: 20px;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav {
+  background-color: #0d0d0d;
+  position: sticky;
+  top: 0;
+}
+nav li {
+  font-family: 'Syne Mono', monospace;
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 25px;
+  display: inline-block;
+}
+nav li a {
+  padding-left: 5px;
+}
+nav li a:active::after {
+  width: 100%;
+  background: white;
+}
+nav li a::after {
+  content: "";
+  padding: 0px 3px 0px 2px;
+  display: block;
+  width: 0;
+  margin-top: 3px;
+  height: 2px;
+  background: 0;
+  transition: width 0.4s, background 0.4s;
+}
+nav li a:hover::after {
+  background: white;
+  width: 100%;
+}
+
+nav ul {
+  display: inline;
+}
+.btn {
+  border: 2px solid white;
+  padding: 10px 2em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: white;
+  color: #262626;
+}
+
+.text-container {
+  background-color: #262626;
+
+  font-family: "Rubik", sans-serif;
+}
+.flex-r {
+  flex-basis: 25%;
+}
+.flex-r p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+}
+.item-middle {
+  display: flex;
+  align-items: center;
+}
+.item-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.text-container h1 {
+  margin: 0 0;
+  padding: 20px 0;
+  font-size: 35px;
+  text-align: center;
+}
+.left {
+  margin: 10px 20px 0px 0px;
+  float: right;
+}
+.navbar-brand {
+  display: inline;
+  font-size: 30px;
+  font-family: Tangerine;
+}
+.navbar-container {
+  width: 90%;
+  padding: 0.5em;
+  margin: 0 auto;
+}
+.jumbotron {
+  background-color: #262626;
+}
+.jumbotron img {
+  max-height: 550px;
+  width: 100%;
+  object-fit: cover;
+}
+.res-icons {
+  display: none;
+}
+.centering {
+  justify-content: center;
+}
+.flex-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.icon-box {
+  flex-basis: 50%;
+  display: flex;
+  color: #262626;
+  align-items: center;
+  justify-content: center;
+}
+.icon-box h4 {
+  margin: 3px 0 0 0;
+}
+.icon-box img {
+  margin-right: 10px;
+}
+.card {
+  background-color: white;
+  height: 20em;
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.9),
+    1px 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+.event {
+  margin: 10px;
+  border-radius: 7px;
+  flex-basis: 50%;
+}
+.card.event {
+  transition: all 0.4s;
+}
+.card.event:hover {
+  box-shadow: 2px 4px 8px 0 rgba(255, 255, 255, 0.9),
+    1px 6px 20px 0 rgba(255, 255, 255, 0.6);
+  cursor: default;
+}
+.event-img {
+  max-width: 12em;
+  width: 100%;
+  vertical-align: middle;
+}
+.card .text {
+  font-family: "Rubik", sans-serif;
+  color: #262626;
+  text-align: center;
+}
+.card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 9em;
+}
+.pp-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.grey {
+  background-color: #262626;
+  color: white;
+}
+.white {
+  background-color: white;
+  color: #262626;
+}
+.green {
+  color: #a4c42a;
+}
+
+.goals {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 2em;
+  color: #262626;
+}
+.goals p::before {
+  content: "\201C";
+  font-size: 4em;
+  color: #a4c42a;
+}
+.goals p::after {
+  content: "\201D";
+  font-size: 4em;
+  color: #a4c42a;
+}
+.background-image {
+  background-image: url(/assets/img/back.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.opacity {
+  background-color: rgba(38, 38, 38, 0.2);
+}
+.mt-1 {
+  margin-top: 1em !important;
+}
+.mt-2 {
+  margin-top: 2em !important;
+}
+.mb-2 {
+  margin-bottom: 2em !important;
+}
+.mb-1 {
+  margin-bottom: 1em !important;
+}
+.pt-1 {
+  padding-top: 1em !important;
+}
+.pt-2 {
+  padding-top: 2em !important;
+}
+.pb-1 {
+  padding-bottom: 1em !important;
+}
+.pb-2 {
+  padding-bottom: 2em !important;
+}
+@media screen and (max-width: 782px) {
+  nav .left li {
+    display: none;
+  }
+  .res-icons {
+    display: block;
+    float: right;
+  }
+  nav .left {
+    margin: 0;
+    transition: all ease-in-out 0.3s;
+    overflow: hidden;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+  nav .left.colapse {
+    max-height: 35px;
+  }
+  nav .left.responsive {
+    float: none;
+    max-height: 200px;
+    background-color: #0d0d0d;
+    position: relative;
+  }
+  .left.responsive li.res-icons {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .left.responsive ul {
+    padding: 0;
+    display: block;
+    transition: ease 0.4s;
+  }
+  .left.responsive li {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  .text-container h1 {
+    font-size: 20px;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .event-img {
+    max-width: 8em;
+    width: 100%;
+  }
+  .goals {
+    font-size: 1em;
+  }
+  .flex-r {
+    flex-direction: column;
+  }
+}

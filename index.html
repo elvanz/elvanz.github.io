@@ -1,57 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine|Syne+Mono&effect=shadow-multiple|anaglyph">
+    />
+    <link rel="icon" href="./assets/img/Asset 5.png"/>
     <title>Elvan's Site</title>
-    <link rel="stylesheet" href="/src/style/style.css" />
-    <link rel="icon" href="/src/assets/Asset 5.png"/>
   </head>
   <body>
     <header>
       <nav>
-        <div class="container">
-          <a
-            target="_blank"
-            id="navbar"
-            class="button"
-            href="https://google.com"
-          >
-            Go back to your trusty ol homepage!
+        <div id="myNavbar" class="navbar-container">
+          <h1 class="navbar-brand font-effect-anaglyph"><a href="">Mayflower Entertainment Studio</a></h1>
+          <a class="res-icons" onclick="toggle()">
+            <span class="material-icons" style="color: white;">
+              menu
+            </span>
           </a>
+          <div id="myNav" class="left colapse font-effect-shadow-multiple">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <div id="home" class="jumbotron">
+        <img src="./assets/img/jumbotron3.png" alt="" />
+      </div>
     </header>
     <main>
-      <div class="container">
-        <h1>
-          Welcome to my Website!
-        </h1>
-        <p>
-          This website is still in maintenance
-        </p>
-
-        <figure>
-          <a href=""
-            ><img
-              src="https://cdn.discordapp.com/attachments/727247094481551371/768493757397073931/766629.jpg"
-              alt="Alfin"
-          /></a>
-
-          <figcaption>
-            ini monyet
-          </figcaption>
-        </figure>
-
-        <ol type="a">
-          <li><a href="https://youtube.com">Kenze1</a></li>
-          <li>alfin goblok</li>
-        </ol>
+      <div class="content">
+        <article id="teams">
+          <div class="text-container grey">
+            <h1><span class="green">SERIES</span> WE COMPETE IN</h1>
+            <div class="flex-container pb-1">
+              <div class="card event">
+                <div class="card-image">
+                  <img
+                    class="event-img"
+                    src="./assets/img/rfactor2logo.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="text">RFACTOR2 HONDA CHAMPIONSHIP</h4>
+                <div class="flex-container mb-1 centering">
+                  <div class="icon-box mt-1">
+                    <img src="./assets/svg/racing-helmet.svg" alt="" />
+                    <h4>1</h4>
+                  </div>
+                  <div class="icon-box mt-1">
+                    <img src="./assets/svg/trophy-variant.svg" alt="" />
+                    <h4>5</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card event">
+                <div class="card-image">
+                  <img class="event-img" src="./assets/img/acc.png" alt="" />
+                </div>
+                <h4 class="text">COMPETIZIONE GT SERIES</h4>
+                <div class="flex-container mb-1 centering">
+                  <div class="icon-box mt-1">
+                    <img src="./assets/svg/racing-helmet.svg" alt="" />
+                    <h4>2</h4>
+                  </div>
+                  <div class="icon-box mt-1">
+                    <img src="./assets/svg/trophy-variant.svg" alt="" />
+                    <h4>8</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card event">
+                <div class="card-image">
+                  <img class="event-img" src="./assets/img/f1e.png" alt="" />
+                </div>
+                <h4 class="text">F1 ESPORTS SERIES</h4>
+                <div class="flex-container mb-1 centering">
+                  <div class="icon-box mt-1">
+                    <img src="./assets/svg/racing-helmet.svg" alt="" />
+                    <h4>2</h4>
+                  </div>
+                  <div class="icon-box mt-1">
+                    <img src="./assets/svg/trophy-variant.svg" alt="" />
+                    <h4>2</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+        </article>
+        <article id="about">
+          <div class="text-container white">
+            <div class="container">
+              <h1>OUR <span class="green">PROFILE</span></h1>
+              <blockquote class="goals">
+                <p>Indie Game Developer Studio</p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <br />
+        <article id="contact" class="mt-2">
+          <div class="background-image">
+            <div class="text-container opacity grey pb-1">
+              <h1 class="pt-1 pb-1">
+                BE <span class="green">PART</span> OF OUR TEAM
+              </h1>
+              <div class="mt-2 flex-container pb-1 centering">
+                <a href="" class="btn">Join Us</a>
+              </div>
+              <br />
+              <br />
+              <br />
+            </div>
+          </div>
+        </article>
       </div>
+      <aside>
+        <div class="text-container grey">
+          <h1 class="green pt-1">
+            BIODATA
+          </h1>
+          <div class="flex-container centering pb-2">
+            <div class="flex-r item-center">
+              <img class="pp-img mt-1" src="./assets/img/Profile.jpg" alt="" />
+            </div>
+            <div class="flex-r item-middle">
+              <div>
+                <p class="">Nama &nbsp : Elvan Mulyono</p>
+                <p>No HP &nbsp: +81 80 9670 9725</p>
+                <p>Email &nbsp : elvan_kyouto@yahoo.co.jp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
     </main>
     <footer>
-    Copyright<span>&#169;</span> Elvan 2020
+      <div class="container">
+        <h3>&copy Elvan, 2020</h3>
+      </div>
     </footer>
   </body>
+  <script src="./assets/js/responsive.js"></script>
 </html>
